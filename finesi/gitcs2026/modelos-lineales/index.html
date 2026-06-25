@@ -1,1 +1,61 @@
-<h1>Modelos Lineales - EST210</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EST210 - Modelos Lineales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fafafc; color: #334155; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; }
+        .curso-container { background: #ffffff; border: 1px solid #e9ecf4; border-radius: 20px; padding: 40px; width: 90%; max-width: 850px; margin-top: 40px; margin-bottom: 40px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.03); box-sizing: border-box; }
+        .curso-header { background-color: #e0f7fa; border-left: 5px solid #b2ebf2; padding: 24px; border-radius: 4px 12px 12px 4px; margin-bottom: 30px; }
+        .curso-header span.codigo { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #00838f; display: inline-block; margin-bottom: 5px; }
+        .curso-header h1 { margin: 0; font-size: 1.8rem; color: #1e293b; font-weight: 700; }
+        h2 { font-size: 1.3rem; color: #0f172a; margin-top: 30px; margin-bottom: 15px; border-bottom: 2px solid #f1f5f9; padding-bottom: 8px; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 25px; }
+        .info-item { background: #f8fafc; padding: 15px; border-radius: 12px; border: 1px solid #e2e8f0; }
+        .info-item strong { display: block; font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 4px; }
+        .info-item p { margin: 0; font-size: 0.95rem; font-weight: 600; color: #334155; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 25px; font-size: 0.95rem; }
+        th { background: #f1f5f9; color: #475569; text-align: left; padding: 12px; font-weight: 600; border-bottom: 2px solid #e2e8f0; }
+        td { padding: 12px; border-bottom: 1px solid #e2e8f0; color: #334155; }
+        .formula { background: #f0f4ff; border: 1px solid #dbeafe; color: #1e40af; padding: 12px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 5px; }
+        .btn-volver { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #f1f5f9; color: #475569; text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease-in-out; border: 1px solid #e2e8f0; margin-top: 20px; }
+        .btn-volver:hover { background: #e2e8f0; color: #1e293b; transform: translateX(-3px); }
+        footer { margin-top: 40px; margin-bottom: 30px; font-size: 0.85rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <div class="curso-container">
+        <header class="curso-header">
+            <span class="codigo">EST210</span>
+            <h1>Modelos Lineales</h1>
+        </header>
+
+        <h2>📌 Información General</h2>
+        <div class="info-grid">
+            <div class="info-item"><strong>Ciclo / Semestre</strong><p>Ciclo VI • Semestre 2026-I</p></div>
+            <div class="info-item"><strong>Créditos</strong><p>05 Créditos</p></div>
+            <div class="info-item"><strong>Prerrequisito</strong><p>EST307 - Modelos Discretos</p></div>
+            <div class="info-item"><strong>Horas Lectivas</strong><p>4h Teóricas / 2h Prácticas</p></div>
+            <div class="info-item"><strong>Duración</strong><p>Del 30 de Marzo al 31 de Julio del 2026</p></div>
+            <div class="info-item"><strong>Ambiente</strong><p>Aula 205 (Pabellón Antiguo)</p></div>
+            <div class="info-item"><strong>Nivel</strong><p>Avanzado</p></div>
+            <div class="info-item"><strong>Escuela</strong><p>Ingeniería Estadística e Informática</p></div>
+        </div>
+
+        <h2>📊 Sistema de Evaluación</h2>
+        <table>
+            <thead><tr><th>Unidad</th><th>Evaluación</th><th>Ponderación</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Unidad 1</strong></td><td>Promedio Parcial I (EVI 1 + EVI 2)</td><td>50%</td></tr>
+                <tr><td><strong>Unidad 2</strong></td><td>Promedio Parcial II (EVI 1 + EVI 2)</td><td>50%</td></tr>
+            </tbody>
+        </table>
+        <div class="formula">Promedio Final = 50%(Unidad 1) + 50%(Unidad 2)</div>
+        <br><br>
+        <a href="../" class="btn-volver">← Volver a Mis Cursos</a>
+    </div>
+    <footer><p>© 2026 Nicole Geraldine • Ingeniería Estadística e Informática</p></footer>
+</body>
+</html>
