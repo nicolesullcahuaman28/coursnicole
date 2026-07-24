@@ -28,6 +28,7 @@
             align-items: center;
         }
 
+        /* ── HEADER ── */
         .header {
             width: 100%;
             max-width: 820px;
@@ -84,6 +85,7 @@
             font-weight: 300;
         }
 
+        /* progreso rápido del ciclo */
         .progress-strip {
             display: flex;
             gap: 22px;
@@ -110,6 +112,7 @@
             text-transform: uppercase;
         }
 
+        /* ── SECTION LABEL ── */
         .section-label {
             width: 100%;
             max-width: 820px;
@@ -134,6 +137,7 @@
             background: var(--border);
         }
 
+        /* ── GRID ── */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
@@ -143,6 +147,7 @@
             margin-bottom: 48px;
         }
 
+        /* ── CARDS ── */
         .card {
             display: flex;
             flex-direction: column;
@@ -151,7 +156,7 @@
             padding: 0;
             text-decoration: none;
             color: var(--ink);
-            min-height: 236px;
+            min-height: 256px;
             border-radius: 14px;
             border: 1px solid var(--border);
             overflow: hidden;
@@ -169,6 +174,7 @@
             transform: translate(2px, -2px);
         }
 
+        /* Barra de color superior */
         .card-bar {
             height: 5px;
             width: 100%;
@@ -198,6 +204,7 @@
             color: var(--soft);
         }
 
+        /* Pill de estado */
         .card-pill {
             font-size: 10px;
             font-weight: 500;
@@ -226,6 +233,23 @@
             font-weight: 300;
         }
 
+        .card-docente {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11.5px;
+            color: var(--muted);
+            font-weight: 400;
+            padding-top: 2px;
+        }
+
+        .card-docente svg {
+            width: 13px;
+            height: 13px;
+            flex-shrink: 0;
+            color: var(--soft);
+        }
+
         .card-meta {
             display: flex;
             gap: 14px;
@@ -252,6 +276,7 @@
             letter-spacing: 0.4px;
         }
 
+        /* Footer de la card */
         .card-footer {
             display: flex;
             align-items: center;
@@ -307,6 +332,7 @@
             height: 12px;
         }
 
+        /* ── PALETA POR CURSO ── */
         .c-blue   .card-bar { background: #93c5fd; }
         .c-blue   .card-pill { background: #eff6ff; color: #3b82f6; }
 
@@ -325,6 +351,7 @@
         .c-teal   .card-bar { background: #5eead4; }
         .c-teal   .card-pill { background: #f0fdfa; color: #0d9488; }
 
+        /* ── FOOTER ── */
         footer {
             font-size: 12px;
             color: var(--soft);
@@ -376,14 +403,18 @@
                 <div class="card-icon">🤖</div>
                 <p class="card-name">Aprendizaje No Supervisado</p>
                 <p class="card-desc">Clustering, reducción de dimensionalidad y detección de patrones sin etiquetas.</p>
+                <div class="card-docente">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a8 8 0 0 1 16 0v1"></path></svg>
+                    Aleman Gonzales, Leonid
+                </div>
                 <div class="card-meta">
                     <div class="card-meta-item">
                         <span class="m-val">4</span>
                         <span class="m-lbl">Créditos</span>
                     </div>
                     <div class="card-meta-item">
-                        <span class="m-val">Teoría-Práctica</span>
-                        <span class="m-lbl">Modalidad</span>
+                        <span class="m-val">Avanzado</span>
+                        <span class="m-lbl">Nivel</span>
                     </div>
                 </div>
             </a>
@@ -409,14 +440,18 @@
                 <div class="card-icon">📋</div>
                 <p class="card-name">Gestión de Proyectos TICs</p>
                 <p class="card-desc">Planificación, cronogramas y metodologías ágiles para proyectos tecnológicos.</p>
+                <div class="card-docente">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a8 8 0 0 1 16 0v1"></path></svg>
+                    Melgarejo Bolivar, Romel Percy
+                </div>
                 <div class="card-meta">
                     <div class="card-meta-item">
-                        <span class="m-val">3</span>
+                        <span class="m-val">4</span>
                         <span class="m-lbl">Créditos</span>
                     </div>
                     <div class="card-meta-item">
-                        <span class="m-val">Teoría-Práctica</span>
-                        <span class="m-lbl">Modalidad</span>
+                        <span class="m-val">Básico</span>
+                        <span class="m-lbl">Nivel</span>
                     </div>
                 </div>
             </a>
@@ -442,14 +477,18 @@
                 <div class="card-icon">🌐</div>
                 <p class="card-name">Arquitectura de Redes y Protocolos</p>
                 <p class="card-desc">Diseño de redes, modelos OSI/TCP-IP y simulación con Cisco Packet Tracer.</p>
+                <div class="card-docente">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a8 8 0 0 1 16 0v1"></path></svg>
+                    Apaza Tarqui, Alejandro
+                </div>
                 <div class="card-meta">
                     <div class="card-meta-item">
-                        <span class="m-val">4</span>
+                        <span class="m-val">3</span>
                         <span class="m-lbl">Créditos</span>
                     </div>
                     <div class="card-meta-item">
-                        <span class="m-val">Teoría-Práctica</span>
-                        <span class="m-lbl">Modalidad</span>
+                        <span class="m-val">Básico</span>
+                        <span class="m-lbl">Nivel</span>
                     </div>
                 </div>
             </a>
@@ -475,14 +514,18 @@
                 <div class="card-icon">📈</div>
                 <p class="card-name">Series de Tiempo</p>
                 <p class="card-desc">Estacionariedad, modelos ARIMA/SARIMAX y pronóstico dinámico con EViews.</p>
+                <div class="card-docente">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a8 8 0 0 1 16 0v1"></path></svg>
+                    Lluen Vallejos, Cesar Augusto
+                </div>
                 <div class="card-meta">
                     <div class="card-meta-item">
                         <span class="m-val">4</span>
                         <span class="m-lbl">Créditos</span>
                     </div>
                     <div class="card-meta-item">
-                        <span class="m-val">Teoría-Práctica</span>
-                        <span class="m-lbl">Modalidad</span>
+                        <span class="m-val">Avanzado</span>
+                        <span class="m-lbl">Nivel</span>
                     </div>
                 </div>
             </a>
@@ -508,14 +551,18 @@
                 <div class="card-icon">📉</div>
                 <p class="card-name">Regresión Lineal y No Lineal</p>
                 <p class="card-desc">Estimación de modelos, supuestos, diagnósticos y validación de regresiones.</p>
+                <div class="card-docente">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a8 8 0 0 1 16 0v1"></path></svg>
+                    Vargas Valverde, Confesor Milan
+                </div>
                 <div class="card-meta">
                     <div class="card-meta-item">
                         <span class="m-val">4</span>
                         <span class="m-lbl">Créditos</span>
                     </div>
                     <div class="card-meta-item">
-                        <span class="m-val">Teoría-Práctica</span>
-                        <span class="m-lbl">Modalidad</span>
+                        <span class="m-val">Intermedio</span>
+                        <span class="m-lbl">Nivel</span>
                     </div>
                 </div>
             </a>
@@ -541,14 +588,18 @@
                 <div class="card-icon">🔢</div>
                 <p class="card-name">Modelos Lineales</p>
                 <p class="card-desc">Álgebra matricial aplicada, mínimos cuadrados y modelos lineales generalizados.</p>
+                <div class="card-docente">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a8 8 0 0 1 16 0v1"></path></svg>
+                    Morillos Valderrama, Santos Octavio
+                </div>
                 <div class="card-meta">
                     <div class="card-meta-item">
-                        <span class="m-val">4</span>
+                        <span class="m-val">5</span>
                         <span class="m-lbl">Créditos</span>
                     </div>
                     <div class="card-meta-item">
-                        <span class="m-val">Teoría-Práctica</span>
-                        <span class="m-lbl">Modalidad</span>
+                        <span class="m-val">Avanzado</span>
+                        <span class="m-lbl">Nivel</span>
                     </div>
                 </div>
             </a>
